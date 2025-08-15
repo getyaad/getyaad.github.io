@@ -13,19 +13,11 @@ import CTA from './components/CTA/CTA'
 import Footer from './components/Footer/Footer'
 
 function App() {
-  // Smooth scrolling for anchor links
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
-    }
-  }
-
   return (
     <>
       <Hero />
       <HowToJoin />
-      <WhyYaadWorks scrollToSection={scrollToSection} />
+      <WhyYaadWorks/>
       <Day1Journey />
       <TopperCarousel />
       <FAQ />

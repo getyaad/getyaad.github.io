@@ -1,6 +1,6 @@
 /* CTA Section Styles */
 .cta-section {
-  background: linear-gradient(135deg, var(--main-color), var(--geography));
+  background: #ffffff;
   color: #000000;
   padding: 5rem 2rem;
   text-align: center;
@@ -42,6 +42,7 @@
   transform: translateY(-3px);
   box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
   color: #ffffff;
+  opacity: 0.9;
 }
 
 .whatsapp-icon {

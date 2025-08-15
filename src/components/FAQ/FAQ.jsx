@@ -108,7 +108,7 @@ const FAQ = () => {
   }
 
   return (
-    <div className="section-wrapper-alt">
+    <div className="section-wrapper-white">
       <section className="section">
         <h2 className="section-title">Frequently Asked Questions</h2>
         <p style={{textAlign: 'center', color: '#6b7280', fontSize: '1.1rem', maxWidth: '600px', margin: '0 auto 3rem'}}>

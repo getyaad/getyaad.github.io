@@ -3,28 +3,15 @@
   line-height: 1.5;
   font-weight: 400;
 
-  /* Mobile app color scheme */
+  /* Simplified distinctive color scheme */
   --main-color: #6493E6;
   --second-main-color: #95BEFA;
-  --logo-light: #F5F5F5;
-  --logo-dark: #000000;
-  --approval-color: #B5E352;
-  --approval-color-light: #CFEA93;
-  --wrong-color: #F9A6A2;
-  --wrong-color-light: rgba(249, 166, 162, 0.2);
-  --extra-color: #F7DA21;
-  
-  /* Subject colors with 50% opacity */
-  --art-culture: rgba(255, 204, 176, 0.5);
-  --ancient-history: rgba(235, 201, 150, 0.5);
-  --medieval-history: rgba(255, 243, 199, 0.5);
-  --modern-history: rgba(255, 209, 204, 0.5);
-  --polity: rgba(214, 198, 244, 0.5);
-  --economy: rgba(215, 223, 234, 0.5);
-  --geography: rgba(191, 232, 229, 0.5);
-  --environment: rgba(207, 234, 212, 0.5);
-  --science-tech: rgba(226, 225, 249, 0.5);
-  --general-knowledge: rgba(199, 217, 239, 0.5);
+  --light-blue: rgba(149, 190, 250, 0.1);
+  --very-light-blue: rgba(149, 190, 250, 0.05);
+  --gray-gradient: linear-gradient(135deg, #ffffff 0%, #F5F5F5 50%, rgba(215, 223, 234, 0.5) 100%);
+  --blue-gradient: linear-gradient(135deg, #ffffff 0%, rgba(149, 190, 250, 0.08) 50%, rgba(149, 190, 250, 0.15) 100%);
+  --whatsapp-green: #25D366;
+  --approval-green: #B5E352;
 
   color-scheme: light;
   color: #000000;

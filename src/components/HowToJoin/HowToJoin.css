@@ -103,8 +103,8 @@
   text-align: center;
   margin-top: 2rem;
   padding: 1rem;
-  background: rgba(247, 218, 33, 0.1);
-  border: 1px solid rgba(247, 218, 33, 0.3);
+  background: var(--blue-gradient);
+  border: 1px solid var(--main-color);
   border-radius: 12px;
   max-width: 100%;
   margin-left: auto;
@@ -113,9 +113,15 @@
 }
 
 .join-reminder p {
-  color: #000000;
+  color: var(--main-color);
   font-size: 0.9rem;
   margin: 0;
+  font-weight: 600;
+}
+
+.join-reminder strong {
+  color: var(--main-color);
+  font-weight: 700;
 }
 
 .step-with-action {

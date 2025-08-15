@@ -22,18 +22,25 @@ body {
 }
 
 .section-dark {
-  background: linear-gradient(135deg, var(--modern-history), var(--polity));
+  background: var(--blue-gradient);
 }
 
 /* Full-width section wrappers */
 .section-wrapper-alt {
-  background: linear-gradient(135deg, var(--approval-color-light), var(--economy));
+  background: var(--gray-gradient);
   width: 100%;
   padding: 0;
 }
 
 .section-wrapper-dark {
-  background: linear-gradient(135deg, var(--modern-history), var(--polity));
+  background: var(--blue-gradient);
+  width: 100%;
+  padding: 0;
+}
+
+/* Additional section background variations */
+.section-wrapper-white {
+  background: #ffffff;
   width: 100%;
   padding: 0;
 }

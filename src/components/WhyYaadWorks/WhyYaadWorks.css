@@ -212,7 +212,7 @@
 
 /* Research Credibility */
 .research-credibility {
-  background: linear-gradient(135deg, var(--logo-light), var(--economy));
+  background: var(--gray-gradient);
   padding: 3rem 2rem;
   border-radius: 20px;
   margin-top: 3rem;

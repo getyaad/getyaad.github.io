@@ -2,7 +2,7 @@
 
 /* Interactive Dashboard */
 .dashboard-container {
-  background: linear-gradient(135deg, #ffffff, var(--logo-light));
+  background: #ffffff;
   border-radius: 25px;
   padding: 3rem;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
@@ -142,13 +142,13 @@
 }
 
 .subject-status.strong {
-  background: var(--general-knowledge);
+  background: var(--very-light-blue);
   color: var(--main-color);
 }
 
 .subject-status.needs-work {
-  background: var(--wrong-color-light);
-  color: var(--wrong-color);
+  background: rgba(100, 147, 230, 0.1);
+  color: var(--main-color);
 }
 
 .mastery-percentage-large {
@@ -179,7 +179,7 @@
 }
 
 .progress-fill.medium {
-  background: linear-gradient(90deg, var(--extra-color), var(--second-main-color));
+  background: linear-gradient(90deg, var(--main-color), var(--second-main-color));
 }
 
 .progress-fill::after {
@@ -219,8 +219,8 @@
 }
 
 .action-suggestion.priority {
-  color: var(--wrong-color);
-  background: rgba(249, 166, 162, 0.1);
+  color: var(--main-color);
+  background: var(--very-light-blue);
   border-color: rgba(249, 166, 162, 0.2);
 }
 
@@ -231,7 +231,7 @@
 }
 
 .smart-recommendations {
-  background: linear-gradient(135deg, var(--logo-light), var(--economy));
+  background: var(--blue-gradient);
   border: 2px solid var(--main-color);
   border-radius: 20px;
   padding: 2rem;
@@ -501,9 +501,9 @@
 }
 
 .option.correct {
-  border-color: var(--approval-color);
-  background: var(--approval-color-light);
-  font-weight: 600;
+  border-color: var(--approval-green);
+  background: rgba(181, 227, 82, 0.1);
+  font-weight: 700;
 }
 
 .progress-bar {
@@ -584,7 +584,7 @@
 }
 
 .outcome-card {
-  background: linear-gradient(135deg, var(--logo-light), var(--economy));
+  background: var(--gray-gradient);
   border: 3px solid var(--main-color);
   border-radius: 25px;
   padding: 3rem;

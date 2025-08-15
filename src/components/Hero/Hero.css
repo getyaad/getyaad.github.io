@@ -1,6 +1,6 @@
 /* Hero Section Styles */
 .hero {
-  background: linear-gradient(135deg, #ffffff 0%, var(--logo-light) 50%, var(--economy) 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #F5F5F5 50%, rgba(215, 223, 234, .5) 100%);
   color: #000000;
   position: relative;
   overflow: hidden;
@@ -40,7 +40,7 @@
 }
 
 .banner-link:hover {
-  color: var(--approval-color);
+  color: #6b7280;
 }
 
 /* Hero Content Container */
@@ -108,7 +108,7 @@
 }
 
 .journey-announcement .announcement-text {
-  color: var(--approval-color);
+  color: var(--approval-green);
   font-weight: 600;
   font-size: 1rem;
   margin-bottom: 0.5rem;
@@ -267,11 +267,11 @@
 }
 
 .independence-card::before {
-  background: linear-gradient(90deg, var(--main-color), var(--approval-color));
+  background: linear-gradient(90deg, var(--main-color), var(--approval-green));
 }
 
 .ganesh-card::before {
-  background: linear-gradient(90deg, var(--second-main-color), var(--extra-color));
+  background: linear-gradient(90deg, var(--second-main-color), var(--main-color));
 }
 
 .card-title {
@@ -442,7 +442,7 @@
 .countdown-live {
   font-size: 1rem;
   font-weight: 700;
-  color: var(--approval-color);
+  color: var(--approval-green);
 }
 
 /* Loading animation for countdown */

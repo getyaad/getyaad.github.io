@@ -1,7 +1,7 @@
 import React from 'react'
 import './WhyYaadWorks.css'
 
-const WhyYaadWorks = ({ scrollToSection }) => {
+const WhyYaadWorks = () => {
   return (
     <div className="section-wrapper-alt">
       <section className="section">
@@ -17,9 +17,6 @@ const WhyYaadWorks = ({ scrollToSection }) => {
             </div>
             <h3>Fully Free</h3>
             <p><strong>₹0</strong> for 30 years of PYQs neatly sorted by subject & topic. Complete collection from 1995-2024 during early access.</p>
-            <button className="works-cta-button" onClick={() => scrollToSection('how-to-join')}>
-              Join Waitlist
-            </button>
           </div>
 
           <div className="works-card premium">
@@ -28,9 +25,6 @@ const WhyYaadWorks = ({ scrollToSection }) => {
             </div>
             <h3>Spaced Repetition Made for UPSC</h3>
             <p>You'll see mistakes more often and mastered items less often. More time on weaknesses. Less time on strengths. Faster improvement. No other UPSC app does this meaningfully.</p>
-            <button className="works-cta-button" onClick={() => scrollToSection('day1-journey')}>
-              How It Works
-            </button>
           </div>
 
           <div className="works-card premium">
@@ -39,9 +33,6 @@ const WhyYaadWorks = ({ scrollToSection }) => {
             </div>
             <h3>Know Exactly What to Study Next</h3>
             <p>Yaad doesn't just score one mock. It tracks all your answers over time to form a true picture of mastery. Mastery bars show where you stand. With one tap, revise only your weak areas and watch the list get smaller each day.</p>
-            <button className="works-cta-button" onClick={() => scrollToSection('dashboard')}>
-              See Dashboard
-            </button>
           </div>
         </div>
 
