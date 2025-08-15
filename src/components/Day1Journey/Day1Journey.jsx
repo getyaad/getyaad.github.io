@@ -79,10 +79,6 @@ const Day1Journey = () => {
             </div>
           </div>
         </div>
-
-        <div className="day1-conclusion">
-          <p>Most of us misjudge what we know. <strong>Yaad removes the guesswork with data.</strong></p>
-        </div>
       </div>
     </section>
   )

@@ -58,8 +58,7 @@ const FAQ = () => {
         intro: "Android now. iOS coming soon.",
         list: [
           "Android: Available from Day 1",
-          "iOS: Coming in 2-3 weeks",
-          "Web version: Coming later",
+          "iOS: Coming soon!",
           "Works offline, syncs when connected"
         ],
         conclusion: "iPhone users: Join waitlist to get notified when iOS is ready!"

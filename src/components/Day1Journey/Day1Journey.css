@@ -309,6 +309,10 @@
   gap: 4rem;
   align-items: center;
   margin-bottom: 3rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2rem;
 }
 
 .day1-timeline {
@@ -651,5 +655,33 @@
   }
   60% {
     transform: translateY(-5px);
+  }
+}
+
+/* Responsive Design for Day1 Journey */
+@media (max-width: 1024px) {
+  .day1-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    max-width: 800px;
+  }
+  
+  .day1-visual {
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .day1-grid {
+    padding: 0 1rem;
+    gap: 2rem;
+  }
+  
+  .day1-step {
+    gap: 1.5rem;
+  }
+  
+  .step-content h3 {
+    font-size: 1.1rem;
   }
 }
