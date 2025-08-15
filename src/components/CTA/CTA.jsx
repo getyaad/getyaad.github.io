@@ -1,5 +1,6 @@
 import React from 'react'
-import { useUtmTracking } from '../hooks/useUtmTracking'
+import { useUtmTracking } from '../../hooks/useUtmTracking'
+import './CTA.css'
 
 const CTA = () => {
   const { whatsappUrl } = useUtmTracking()

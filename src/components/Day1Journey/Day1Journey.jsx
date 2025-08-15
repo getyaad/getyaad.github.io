@@ -1,4 +1,5 @@
 import React from 'react'
+import './Day1Journey.css'
 
 const Day1Journey = () => {
   return (

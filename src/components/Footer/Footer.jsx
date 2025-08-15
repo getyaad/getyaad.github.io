@@ -1,6 +1,7 @@
 import React from 'react'
-import { useUtmTracking } from '../hooks/useUtmTracking'
-import { WHATSAPP_NUMBER, SOCIAL_LINKS, APP_CONFIG } from '../config/constants'
+import { useUtmTracking } from '../../hooks/useUtmTracking'
+import { WHATSAPP_NUMBER, SOCIAL_LINKS, APP_CONFIG } from '../../config/constants'
+import './Footer.css'
 
 const Footer = () => {
   const { whatsappUrl } = useUtmTracking()

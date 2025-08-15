@@ -1,0 +1,177 @@
+/* Topper Carousel Styles */
+
+/* Horizontal Topper Carousel */
+.topper-carousel-wrapper {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 60px;
+  width: 100%;
+}
+
+.topper-card-horizontal {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  height: 320px;
+  display: flex;
+  align-items: stretch;
+}
+
+.topper-card-horizontal:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.15);
+}
+
+.topper-left {
+  width: 280px;
+  background: linear-gradient(135deg, #6493E6, #F9A6A2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.topper-image-container {
+  position: relative;
+  text-align: center;
+}
+
+.topper-image {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid white;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.topper-card-horizontal:hover .topper-image {
+  transform: scale(1.03);
+}
+
+.rank-badge-new {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.3rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  background: #6493E6;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid white;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.topper-right {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.topper-details {
+  margin-bottom: 1.5rem;
+}
+
+.topper-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.2;
+}
+
+.topper-rank {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #6493E6;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.topper-quote-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.quote-text {
+  color: #374151;
+  font-style: italic;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 1.1rem;
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.topper-link {
+  text-align: left;
+}
+
+.source-link {
+  color: #6493E6;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.source-link:hover {
+  color: #4A90E2;
+  text-decoration: underline;
+}
+
+/* Minimal pagination dots */
+.carousel-pagination {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.carousel-pagination .swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  background: #d1d5db;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+  margin: 0 4px;
+}
+
+.carousel-pagination .swiper-pagination-bullet-active {
+  background: #6493E6;
+  opacity: 1;
+  transform: scale(1.4);
+}
+
+/* Swiper Carousel Styles */
+.topper-swiper {
+  width: 100%;
+  height: 100%;
+  padding: 20px 0;
+}
+
+.topper-swiper .swiper-slide {
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 320px;
+}
+
+/* Hide default swiper buttons since we have custom ones */
+.topper-swiper .swiper-button-next,
+.topper-swiper .swiper-button-prev {
+  display: none;
+}

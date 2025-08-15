@@ -1,0 +1,368 @@
+/* Why Yaad Works Section Styles */
+
+/* New Differentiators Section Styles */
+.differentiators-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.differentiator-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #6493E6;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.differentiator-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.diff-number {
+  position: absolute;
+  top: -15px;
+  left: 2.5rem;
+  background: linear-gradient(135deg, #6493E6, #F9A6A2);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 15px rgba(100, 147, 230, 0.3);
+}
+
+.diff-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 1rem 0 1rem 0;
+  line-height: 1.4;
+}
+
+.diff-description {
+  color: #6b7280;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Founding User Benefits Styles */
+.founding-benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.founding-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.founding-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  border-color: #6493E6;
+}
+
+.founding-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  background: linear-gradient(135deg, #6493E6, #F9A6A2);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 8px 25px rgba(100, 147, 230, 0.3);
+}
+
+.founding-card h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 1rem 0;
+}
+
+.founding-card p {
+  color: #6b7280;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Why Yaad Works Section */
+.why-works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.works-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.works-card.premium {
+  border: 2px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(135deg, #6493E6, #F9A6A2) border-box;
+}
+
+.works-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.works-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.works-icon-img {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(100, 147, 230, 0.1);
+  border-radius: 20px;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.works-icon-img:hover {
+  transform: scale(1.1);
+}
+
+.works-icon-img img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.works-action {
+  display: inline-block;
+  color: #6493E6;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  transition: color 0.3s ease;
+}
+
+.works-action:hover {
+  color: #4A90E2;
+  text-decoration: underline;
+}
+
+.works-card h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.works-card p {
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.works-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #6493E6, #F9A6A2);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Research Credibility */
+.research-credibility {
+  background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  margin-top: 3rem;
+  text-align: center;
+  border: 1px solid rgba(100, 147, 230, 0.1);
+}
+
+.research-credibility h4 {
+  color: #1f2937;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.institution-logos {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.institution-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.institution-badge:hover {
+  transform: scale(1.05);
+}
+
+.logo-placeholder {
+  font-size: 2.5rem;
+  color: #6493E6;
+}
+
+.institution-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.institution-badge span {
+  font-weight: 600;
+  color: #374151;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.research-links-compact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.research-links-compact a {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.research-links-compact a:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.research-links-compact span {
+  color: #9ca3af;
+  font-weight: 300;
+}
+
+.works-cta-button {
+  background: linear-gradient(135deg, #6493E6, #4A90E2);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: none;
+  letter-spacing: 0.3px;
+  box-shadow: 0 4px 15px rgba(100, 147, 230, 0.3);
+  align-self: center;
+}
+
+.works-cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(100, 147, 230, 0.4);
+  background: linear-gradient(135deg, #4A90E2, #6493E6);
+}
+
+.research-points-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.research-point-compact {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid rgba(100, 147, 230, 0.15);
+  transition: all 0.3s ease;
+}
+
+.research-point-compact:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(100, 147, 230, 0.15);
+}
+
+.research-point-compact h5 {
+  color: #1f2937;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+}
+
+.research-point-compact p {
+  color: #4b5563;
+  line-height: 1.5;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.research-credibility p a {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.research-credibility p a:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}

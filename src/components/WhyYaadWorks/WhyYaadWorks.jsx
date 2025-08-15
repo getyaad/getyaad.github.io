@@ -1,4 +1,5 @@
 import React from 'react'
+import './WhyYaadWorks.css'
 
 const WhyYaadWorks = ({ scrollToSection }) => {
   return (

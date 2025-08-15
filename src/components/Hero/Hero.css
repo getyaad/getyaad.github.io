@@ -1,0 +1,421 @@
+/* Hero Section Styles */
+.hero {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #cbd5e1 100%);
+  color: #1f2937;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ultra-thin Top Banner */
+.hero-top-banner {
+  width: 100%;
+  background: linear-gradient(135deg, #ff7700, #ff9500);
+  color: white;
+  padding: 0.4rem 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 1px 3px rgba(255, 119, 0, 0.3);
+}
+
+.banner-flag {
+  width: 16px;
+  height: 16px;
+}
+
+.banner-text {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Hero Content Container */
+.hero-content {
+  flex: 1;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+/* Horizontal Header with Logo */
+.hero-header-horizontal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-square {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.logo-text {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.hero-tagline {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+  background: linear-gradient(135deg, #1f2937, #6493E6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.3;
+}
+
+/* Journey Announcement (above curve) */
+.journey-announcement {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.journey-announcement .announcement-text {
+  color: #059669;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.journey-announcement .info-subtitle {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Organic Journey Container */
+.journey-container {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  gap: 2.5rem;
+  max-width: 100%;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Journey Cards */
+.journey-card {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  padding: 1.2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  cursor: default;
+}
+
+.journey-card:hover {
+  transform: translateY(-2px);
+}
+
+.independence-card {
+  border-left: 4px solid #ff7700;
+}
+
+.ganesh-card {
+  border-left: 4px solid #8b5cf6;
+}
+
+.card-icon {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.milestone-emoji {
+  width: 32px;
+  height: 32px;
+}
+
+/* Special styling for independence card image */
+.independence-card .card-icon {
+  margin: -1.2rem -1.2rem 0.5rem -1.2rem; /* Negative margins but within card boundaries */
+}
+
+.independence-card .milestone-emoji {
+  width: 100%;
+  height: auto;
+  border-radius: 16px 16px 0 0; /* Match card border radius on top */
+  object-fit: cover;
+  padding-left: 2rem;
+}
+
+.ganesh-card .milestone-emoji {
+  width: 160px;
+  height: 160px;
+  margin: -15px -15px -10px -15px; /* Negative margins to compensate for internal image padding */
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.independence-card .card-title, 
+.ganesh-card .card-title {
+  margin-top: 0rem;
+}
+
+.independence-card .card-icon, 
+.ganesh-card .card-icon {
+  margin-bottom: 0rem;
+}
+
+.card-subtitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+.card-description {
+  font-size: 0.9rem;
+  color: #4b5563;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+}
+
+.status-badge.current {
+  background: linear-gradient(135deg, #ff7700, #ff9500);
+  color: white;
+}
+
+.status-badge.upcoming {
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+  color: white;
+}
+
+/* Curved Journey Path */
+.journey-path {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  min-width: 250px;
+  position: relative;
+}
+
+/* Container for curve and icons */
+.curve-with-icons {
+  position: relative;
+  width: 100%;
+}
+
+.journey-curve {
+  width: 100%;
+  height: 120px;
+  opacity: 0.8;
+}
+
+/* Free-floating Journey Icons */
+.journey-icons-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.journey-icon {
+  position: absolute;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.15));
+  transition: transform 0.3s ease;
+}
+
+.journey-icon:hover {
+  transition: transform 0.3s ease;
+}
+
+.independence-icon:hover {
+  transform: translate(-50%, -50%) scale(1.1) rotate(0deg);
+}
+
+.ganesh-journey-icon:hover {
+  transform: translate(50%, -50%) scale(1.1) rotate(0deg);
+}
+
+/* Independence icon - positioned at curve start */
+.independence-icon {
+  width: 140px;
+  height: auto;
+  top: 25%;
+  left: 20%;
+  transform: translate(-50%, -50%) rotate(-8deg);
+  z-index: 3;
+}
+
+/* Ganesh journey icon - positioned at curve end */
+.ganesh-journey-icon {
+  width: 160px;
+  height: auto;
+  top: 50%;
+  right: 15%;
+  transform: translate(50%, -50%) rotate(6deg);
+  z-index: 3;
+}
+
+/* Compact Countdown Widget */
+.countdown-widget {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-width: 100px;
+  margin-top: 0.1rem;
+}
+
+.countdown-label {
+  font-size: 0.8rem;
+  color: #6b7280;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.countdown-display {
+  display: flex;
+  gap: 0.3rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.countdown-unit {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #1f2937;
+  background: linear-gradient(135deg, #6493E6, #8b5cf6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.countdown-live {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #10b981;
+}
+
+/* Loading animation for countdown */
+.countdown-unit.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.5rem;
+  height: 1.2rem;
+}
+
+.loading-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6493E6, #8b5cf6);
+  animation: loading-pulse 1.5s ease-in-out infinite;
+}
+
+.loading-dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loading-dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.loading-dot:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+@keyframes loading-pulse {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Compact CTA Section */
+.hero-cta-section {
+  text-align: center;
+}
+
+.cta-question {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
+.cta-button:hover {
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+  color: white;
+}
+
+.whatsapp-icon {
+  width: 20px;
+  height: 20px;
+}

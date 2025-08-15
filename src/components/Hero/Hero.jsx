@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react'
-import { useUtmTracking } from '../hooks/useUtmTracking'
-import { APP_CONFIG } from '../config/constants'
+import { useUtmTracking } from '../../hooks/useUtmTracking'
+import { APP_CONFIG } from '../../config/constants'
+import './Hero.css'
 
 const Hero = () => {
   const { whatsappUrl } = useUtmTracking()
   const [timeLeft, setTimeLeft] = useState({})
+  const [isLoading, setIsLoading] = useState(true)
 
   // Countdown to August 27, 2025 12:00 AM India Time (UTC+5:30)
   useEffect(() => {
@@ -21,8 +23,10 @@ const Hero = () => {
           minutes: Math.floor((difference / 1000 / 60) % 60),
           seconds: Math.floor((difference / 1000) % 60)
         })
+        setIsLoading(false)
       } else {
         setTimeLeft({ expired: true })
+        setIsLoading(false)
       }
     }, 1000)
 
@@ -105,10 +109,29 @@ const Hero = () => {
               <div className="countdown-label">App launches in</div>
               {!timeLeft.expired ? (
                 <div className="countdown-display">
-                  <span className="countdown-unit">{timeLeft.days || 0}d</span>
-                  <span className="countdown-unit">{timeLeft.hours || 0}h</span>
-                  <span className="countdown-unit">{timeLeft.minutes || 0}m</span>
-                  <span className="countdown-unit">{timeLeft.seconds || 0}s</span>
+                  {isLoading ? (
+                    <>
+                      <span className="countdown-unit loading">
+                        <div className="loading-dot"></div>
+                      </span>
+                      <span className="countdown-unit loading">
+                        <div className="loading-dot"></div>
+                      </span>
+                      <span className="countdown-unit loading">
+                        <div className="loading-dot"></div>
+                      </span>
+                      <span className="countdown-unit loading">
+                        <div className="loading-dot"></div>
+                      </span>
+                    </>
+                  ) : (
+                    <>
+                      <span className="countdown-unit">{timeLeft.days || 0}d</span>
+                      <span className="countdown-unit">{timeLeft.hours || 0}h</span>
+                      <span className="countdown-unit">{timeLeft.minutes || 0}m</span>
+                      <span className="countdown-unit">{timeLeft.seconds || 0}s</span>
+                    </>
+                  )}
                 </div>
               ) : (
                 <div className="countdown-live">Live now!</div>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './FAQ.css'
 
 const FAQ = () => {
   const [openFAQs, setOpenFAQs] = useState(new Set())

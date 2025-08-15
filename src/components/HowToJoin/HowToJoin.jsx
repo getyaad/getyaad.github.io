@@ -1,5 +1,6 @@
 import React from 'react'
-import { WHATSAPP_NUMBER } from '../config/constants'
+import { WHATSAPP_NUMBER } from '../../config/constants'
+import './HowToJoin.css'
 
 const HowToJoin = () => {
   const displayNumber = WHATSAPP_NUMBER.replace(/^91/, '')
