@@ -55,9 +55,6 @@ const Hero = () => {
         <div className="journey-container">
           {/* Independence Day Card */}
           <div className="journey-card independence-card">
-            <div className="card-icon">
-              <img src="/india-flag-curve.webp" alt="Independence Day" className="milestone-emoji india-independence-icon" />
-            </div>
             <h3 className="card-title">Independence Day</h3>
             <p className="card-subtitle">Join the waitlist today</p>
             <p className="card-description">
@@ -141,9 +138,6 @@ const Hero = () => {
 
           {/* Ganesh Chaturthi Card */}
           <div className="journey-card ganesh-card">
-            <div className="card-icon">
-              <img src="/ganesh-icon.png" alt="Ganesh Chaturthi" className="milestone-emoji ganesh-icon" />
-            </div>
             <h3 className="card-title">Ganesh Chaturthi</h3>
             <p className="card-subtitle">App launches completely free</p>
             <p className="card-description">

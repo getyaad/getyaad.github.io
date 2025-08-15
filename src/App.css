@@ -9,7 +9,7 @@ body {
   padding: 0;
   font-family: 'Segoe UI', Helvetica, sans-serif;
   background: #ffffff;
-  color: #111;
+  color: #000000;
   line-height: 1.6;
 }
 
@@ -22,18 +22,18 @@ body {
 }
 
 .section-dark {
-  background: linear-gradient(135deg, #FFD1CC80, #D6C6F480);
+  background: linear-gradient(135deg, var(--modern-history), var(--polity));
 }
 
 /* Full-width section wrappers */
 .section-wrapper-alt {
-  background: linear-gradient(135deg, #CFEA9333, #D7DFEA80);
+  background: linear-gradient(135deg, var(--approval-color-light), var(--economy));
   width: 100%;
   padding: 0;
 }
 
 .section-wrapper-dark {
-  background: linear-gradient(135deg, #FFD1CC80, #D6C6F480);
+  background: linear-gradient(135deg, var(--modern-history), var(--polity));
   width: 100%;
   padding: 0;
 }
@@ -44,7 +44,7 @@ body {
   font-weight: 700;
   text-align: center;
   margin-bottom: 3rem;
-  color: #1f2937;
+  color: #000000;
 }
 
 /* Global Button Styles */
@@ -59,8 +59,8 @@ button, input[type="email"] {
 }
 
 button {
-  background: linear-gradient(135deg, #6493E6, #4A90E2);
-  color: white;
+  background: linear-gradient(135deg, var(--main-color), var(--second-main-color));
+  color: #ffffff;
   cursor: pointer;
   font-weight: 600;
   min-width: 140px;
@@ -69,17 +69,17 @@ button {
 }
 
 button:hover {
-  background: linear-gradient(135deg, #4A90E2, #6493E6);
+  background: linear-gradient(135deg, var(--second-main-color), var(--main-color));
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(100, 147, 230, 0.4);
-  color: white;
+  color: #ffffff;
 }
 
 /* Global Input Styles */
 input[type="email"] {
   border: 2px solid #d1d5db;
   background: white;
-  color: #111;
+  color: #000000;
   min-width: 400px;
   text-align: center;
 }
@@ -89,7 +89,7 @@ input[type="email"]::placeholder {
 }
 
 input[type="email"]:focus {
-  border-color: #6493E6;
+  border-color: var(--main-color);
   background: white;
   box-shadow: 0 0 0 3px rgba(100, 147, 230, 0.1);
 }

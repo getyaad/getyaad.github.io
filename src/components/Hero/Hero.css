@@ -1,7 +1,7 @@
 /* Hero Section Styles */
 .hero {
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #cbd5e1 100%);
-  color: #1f2937;
+  background: linear-gradient(135deg, #ffffff 0%, var(--logo-light) 50%, var(--economy) 100%);
+  color: #000000;
   position: relative;
   overflow: hidden;
   min-height: 100vh;
@@ -12,15 +12,15 @@
 /* Ultra-thin Top Banner */
 .hero-top-banner {
   width: 100%;
-  background: linear-gradient(135deg, #ff7700, #ff9500);
-  color: white;
+  background: linear-gradient(135deg, var(--main-color), var(--second-main-color));
+  color: #ffffff;
   padding: 0.4rem 0;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  box-shadow: 0 1px 3px rgba(255, 119, 0, 0.3);
+  box-shadow: 0 1px 3px rgba(100, 147, 230, 0.3);
 }
 
 .banner-flag {
@@ -31,6 +31,16 @@
 .banner-text {
   font-size: 0.8rem;
   font-weight: 500;
+}
+
+.banner-link {
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.banner-link:hover {
+  color: var(--approval-color);
 }
 
 /* Hero Content Container */
@@ -71,14 +81,14 @@
 .logo-text {
   font-size: 2.2rem;
   font-weight: 700;
-  color: #1f2937;
+  color: #000000;
 }
 
 .hero-tagline {
   font-size: 1.8rem;
   font-weight: 600;
   margin: 0;
-  background: linear-gradient(135deg, #1f2937, #6493E6);
+  background: linear-gradient(135deg, #000000, var(--main-color));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -92,13 +102,13 @@
   border-radius: 12px;
   padding: 1rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 3.5rem;
+  margin-bottom: 2.5rem;
   position: relative;
   z-index: 2;
 }
 
 .journey-announcement .announcement-text {
-  color: #059669;
+  color: var(--approval-color);
   font-weight: 600;
   font-size: 1rem;
   margin-bottom: 0.5rem;
@@ -115,72 +125,163 @@
 .journey-container {
   position: relative;
   display: flex;
-  align-items: stretch;
-  gap: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
   max-width: 100%;
   margin: 0 auto;
   width: 100%;
+  flex-wrap: wrap;
 }
 
-/* Journey Cards */
+/* Journey Cards - Redesigned for Hero */
 .journey-card {
-  flex: 1;
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 16px;
-  padding: 1.2rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
+  flex: 0 1 300px;
+  min-width: 280px;
+  max-width: 350px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85));
+  border-radius: 20px;
+  padding: 1.8rem 1.5rem;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.12),
+    0 4px 16px rgba(100, 147, 230, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(100, 147, 230, 0.15);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: default;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+/* Simple approach: cards at edges, middle auto-calculates */
+@media (max-width: 1170px) and (min-width: 965px) {
+  .journey-container {
+    width: 100%;
+    padding: 0 0; /* Screen edge padding */
+    gap: 0; /* No gap, let space be auto-calculated */
+    justify-content: space-between; /* Cards to edges */
+  }
+  
+  .journey-card {
+    flex: 0 0 280px; /* Fixed card size */
+    min-width: 280px;
+    max-width: 280px;
+    padding: 1.6rem 1.4rem;
+  }
+  
+  .journey-path {
+    flex: 1; /* Takes remaining space automatically */
+    min-width: 120px; /* Minimum readable size */
+    max-width: 300px; /* Maximum to prevent it getting too wide */
+    margin: 0 1rem; /* Small margins from cards */
+  }
+  
+  .journey-curve {
+    height: clamp(70px, 8vw, 100px); /* Responsive height */
+  }
+
+  /* Independence icon - positioned at curve start */
+  .independence-icon {
+    top: 34% !important;
+    left: 12% !important;
+  }
+
+  /* Ganesh journey icon - positioned at curve end */
+  .ganesh-journey-icon {
+    top: 50% !important;
+    right: 15% !important;
+  }
+
+  .independence-icon {
+    width: clamp(80px, 7vw, 110px);
+  }
+  
+  .ganesh-journey-icon {
+    width: clamp(100px, 8vw, 130px);
+  }
+}
+
+/* Stack ALL THREE items at 964px */
+@media (max-width: 964px) {
+  .journey-container {
+    gap: 2rem;
+    flex-direction: column;
+  }
+  
+  .journey-card {
+    flex: 1 1 100%;
+    min-width: unset;
+    max-width: 100%;
+    padding: 1.5rem 1.2rem;
+  }
+  
+  .journey-path {
+    min-width: 250px;
+    order: 2; /* Put journey path in the middle when stacked */
+  }
+  
+  .independence-card {
+    order: 1; /* First card */
+  }
+  
+  .ganesh-card {
+    order: 3; /* Last card */
+  }
+}
+
+/* Extra spacing for larger screens */
+@media (min-width: 1201px) and (max-width: 1400px) {
+  .journey-container {
+    gap: 3rem;
+  }
+}
+
+.journey-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--main-color), var(--second-main-color));
+  opacity: 0.8;
 }
 
 .journey-card:hover {
-  transform: translateY(-2px);
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.15),
+    0 8px 24px rgba(100, 147, 230, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
 }
 
 .independence-card {
-  border-left: 4px solid #ff7700;
+  border-left: none;
+  border-top: 3px solid var(--main-color);
 }
 
 .ganesh-card {
-  border-left: 4px solid #8b5cf6;
+  border-left: none;
+  border-top: 3px solid var(--second-main-color);
 }
 
-.card-icon {
-  text-align: center;
-  margin-bottom: 0.5rem;
+.independence-card::before {
+  background: linear-gradient(90deg, var(--main-color), var(--approval-color));
 }
 
-.milestone-emoji {
-  width: 32px;
-  height: 32px;
-}
-
-/* Special styling for independence card image */
-.independence-card .card-icon {
-  margin: -1.2rem -1.2rem 0.5rem -1.2rem; /* Negative margins but within card boundaries */
-}
-
-.independence-card .milestone-emoji {
-  width: 100%;
-  height: auto;
-  border-radius: 16px 16px 0 0; /* Match card border radius on top */
-  object-fit: cover;
-  padding-left: 2rem;
-}
-
-.ganesh-card .milestone-emoji {
-  width: 160px;
-  height: 160px;
-  margin: -15px -15px -10px -15px; /* Negative margins to compensate for internal image padding */
+.ganesh-card::before {
+  background: linear-gradient(90deg, var(--second-main-color), var(--extra-color));
 }
 
 .card-title {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #1f2937;
-  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #000000;
+  margin: 0 0 0.8rem 0;
   text-align: center;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
 }
 
 .independence-card .card-title, 
@@ -188,45 +289,48 @@
   margin-top: 0rem;
 }
 
-.independence-card .card-icon, 
-.ganesh-card .card-icon {
-  margin-bottom: 0rem;
-}
-
 .card-subtitle {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 600;
-  color: #6b7280;
-  margin-bottom: 0.8rem;
+  color: var(--main-color);
+  margin: 0 0 1rem 0;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .card-description {
   font-size: 0.9rem;
   color: #4b5563;
-  line-height: 1.5;
-  margin-bottom: 1rem;
+  line-height: 1.6;
+  margin: 0 0 1.5rem 0;
   text-align: center;
+  font-weight: 500;
 }
 
 .status-badge {
   display: inline-block;
-  padding: 0.3rem 0.8rem;
-  border-radius: 12px;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
   font-size: 0.8rem;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
   width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .status-badge.current {
-  background: linear-gradient(135deg, #ff7700, #ff9500);
-  color: white;
+  background: linear-gradient(135deg, var(--main-color), var(--second-main-color));
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(100, 147, 230, 0.3);
 }
 
 .status-badge.upcoming {
-  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
-  color: white;
+  background: linear-gradient(135deg, var(--second-main-color), var(--main-color));
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(149, 190, 250, 0.3);
 }
 
 /* Curved Journey Path */
@@ -284,8 +388,8 @@
 .independence-icon {
   width: 140px;
   height: auto;
-  top: 25%;
-  left: 20%;
+  top: 30%;
+  left: 17%;
   transform: translate(-50%, -50%) rotate(-8deg);
   z-index: 3;
 }
@@ -328,8 +432,8 @@
 .countdown-unit {
   font-size: 0.9rem;
   font-weight: 700;
-  color: #1f2937;
-  background: linear-gradient(135deg, #6493E6, #8b5cf6);
+  color: #000000;
+  background: linear-gradient(135deg, var(--main-color), var(--second-main-color));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -338,7 +442,7 @@
 .countdown-live {
   font-size: 1rem;
   font-weight: 700;
-  color: #10b981;
+  color: var(--approval-color);
 }
 
 /* Loading animation for countdown */
@@ -354,7 +458,7 @@
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #6493E6, #8b5cf6);
+  background: linear-gradient(135deg, var(--main-color), var(--second-main-color));
   animation: loading-pulse 1.5s ease-in-out infinite;
 }
 
@@ -389,7 +493,7 @@
 .cta-question {
   font-size: 1.4rem;
   font-weight: 600;
-  color: #1f2937;
+  color: #000000;
   margin-bottom: 1.5rem;
   line-height: 1.3;
 }
@@ -399,7 +503,7 @@
   align-items: center;
   gap: 0.8rem;
   background: linear-gradient(135deg, #25d366, #128c7e);
-  color: white;
+  color: #ffffff;
   padding: 1rem 2rem;
   border-radius: 50px;
   text-decoration: none;
@@ -412,7 +516,7 @@
 .cta-button:hover {
   transform: scale(1.05) translateY(-2px);
   box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
-  color: white;
+  color: #ffffff;
 }
 
 .whatsapp-icon {

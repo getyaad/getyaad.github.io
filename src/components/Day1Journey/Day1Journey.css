@@ -2,7 +2,7 @@
 
 /* Interactive Dashboard */
 .dashboard-container {
-  background: linear-gradient(135deg, #ffffff, #f8fafc);
+  background: linear-gradient(135deg, #ffffff, var(--logo-light));
   border-radius: 25px;
   padding: 3rem;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
@@ -28,7 +28,7 @@
 
 .dashboard-stat:hover {
   transform: translateY(-5px);
-  border-color: #6493E6;
+  border-color: var(--main-color);
 }
 
 .stat-icon {
@@ -41,7 +41,7 @@
   display: block;
   font-size: 2rem;
   font-weight: 800;
-  color: #1f2937;
+  color: #000000;
   margin-bottom: 0.5rem;
 }
 
@@ -61,7 +61,7 @@
 .dashboard-section-title h3 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #1f2937;
+  color: #000000;
   margin-bottom: 0.5rem;
 }
 
@@ -91,7 +91,7 @@
 .subject-mastery-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-  border-color: #6493E6;
+  border-color: var(--main-color);
 }
 
 .subject-header {
@@ -105,7 +105,7 @@
   font-size: 2rem;
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, #6493E6, #F9A6A2);
+  background: linear-gradient(135deg, var(--main-color), var(--second-main-color));
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -123,7 +123,7 @@
 .subject-name {
   font-size: 1.3rem;
   font-weight: 700;
-  color: #1f2937;
+  color: #000000;
 }
 
 .subject-status {
@@ -137,24 +137,24 @@
 }
 
 .subject-status.ready {
-  background: #d1fae5;
-  color: #065f46;
+  background: var(--approval-color-light);
+  color: var(--approval-color);
 }
 
 .subject-status.strong {
-  background: #dbeafe;
-  color: #1e40af;
+  background: var(--general-knowledge);
+  color: var(--main-color);
 }
 
 .subject-status.needs-work {
-  background: #fed7aa;
-  color: #9a3412;
+  background: var(--wrong-color-light);
+  color: var(--wrong-color);
 }
 
 .mastery-percentage-large {
   font-size: 2rem;
   font-weight: 800;
-  color: #1f2937;
+  color: #000000;
 }
 
 .animated-progress-bar {
@@ -175,11 +175,11 @@
 }
 
 .progress-fill.high {
-  background: linear-gradient(90deg, #10b981, #34d399);
+  background: linear-gradient(90deg, var(--approval-color), var(--approval-color-light));
 }
 
 .progress-fill.medium {
-  background: linear-gradient(90deg, #f59e0b, #fbbf24);
+  background: linear-gradient(90deg, var(--extra-color), var(--second-main-color));
 }
 
 .progress-fill::after {
@@ -209,7 +209,7 @@
 }
 
 .action-suggestion {
-  color: #6493E6;
+  color: var(--main-color);
   font-weight: 600;
   font-size: 0.9rem;
   background: rgba(100, 147, 230, 0.1);
@@ -219,9 +219,9 @@
 }
 
 .action-suggestion.priority {
-  color: #dc2626;
-  background: rgba(220, 38, 38, 0.1);
-  border-color: rgba(220, 38, 38, 0.2);
+  color: var(--wrong-color);
+  background: rgba(249, 166, 162, 0.1);
+  border-color: rgba(249, 166, 162, 0.2);
 }
 
 .questions-left {
@@ -231,15 +231,15 @@
 }
 
 .smart-recommendations {
-  background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
-  border: 2px solid #0ea5e9;
+  background: linear-gradient(135deg, var(--logo-light), var(--economy));
+  border: 2px solid var(--main-color);
   border-radius: 20px;
   padding: 2rem;
   text-align: center;
 }
 
 .smart-recommendations h4 {
-  color: #0c4a6e;
+  color: #000000;
   font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
@@ -270,7 +270,7 @@
   font-size: 1.5rem;
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, #0ea5e9, #0284c7);
+  background: linear-gradient(135deg, var(--main-color), var(--second-main-color));
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -283,7 +283,7 @@
 }
 
 .rec-content strong {
-  color: #1f2937;
+  color: #000000;
   font-size: 1rem;
   display: block;
   margin-bottom: 0.3rem;
@@ -321,7 +321,7 @@
   top: 60px;
   bottom: 60px;
   width: 2px;
-  background: linear-gradient(to bottom, #6493E6, rgba(100, 147, 230, 0.3));
+  background: linear-gradient(to bottom, var(--main-color), rgba(100, 147, 230, 0.3));
   z-index: 1;
 }
 
@@ -337,7 +337,7 @@
 .step-number {
   width: 40px;
   height: 40px;
-  background: #6493E6;
+  background: var(--main-color);
   color: white;
   border-radius: 50%;
   display: flex;
@@ -361,7 +361,7 @@
 }
 
 .step-content h3 {
-  color: #1f2937;
+  color: #000000;
   font-size: 1.2rem;
   font-weight: 700;
   margin: 0 0 0.5rem 0;
@@ -369,7 +369,7 @@
 }
 
 .step-subtitle {
-  color: #6493E6;
+  color: var(--main-color);
   font-size: 0.9rem;
   font-weight: 600;
   margin: 0 0 1rem 0;
@@ -398,7 +398,7 @@
 }
 
 .day.active {
-  background: #6493E6;
+  background: var(--main-color);
   color: white;
   transform: scale(1.1);
   box-shadow: 0 2px 8px rgba(100, 147, 230, 0.3);
@@ -418,7 +418,7 @@
 .phone-mockup {
   width: 280px;
   height: 500px;
-  background: linear-gradient(135deg, #6493E6, #F9A6A2);
+  background: linear-gradient(135deg, var(--main-color), var(--second-main-color));
   border-radius: 30px;
   padding: 8px;
   margin: 0 auto 2rem;
@@ -465,7 +465,7 @@
 .app-header span {
   font-size: 1.2rem;
   font-weight: 700;
-  color: #6493E6;
+  color: var(--main-color);
 }
 
 .question-card {
@@ -477,7 +477,7 @@
 }
 
 .question-text {
-  color: #1f2937;
+  color: #000000;
   font-weight: 600;
   margin-bottom: 1.5rem;
   font-size: 0.9rem;
@@ -501,9 +501,8 @@
 }
 
 .option.correct {
-  border-color: #10b981;
-  background: #f0fdf4;
-  color: #059669;
+  border-color: var(--approval-color);
+  background: var(--approval-color-light);
   font-weight: 600;
 }
 
@@ -518,7 +517,7 @@
 .progress-fill {
   width: 65%;
   height: 100%;
-  background: linear-gradient(90deg, #6493E6, #F9A6A2);
+  background: linear-gradient(90deg, var(--main-color), var(--second-main-color));
   transition: width 0.3s ease;
 }
 
@@ -557,7 +556,7 @@
 }
 
 .flow-arrow {
-  color: #6493E6;
+  color: var(--main-color);
   font-size: 1.2rem;
   font-weight: 700;
   margin-top: -1.5rem;
@@ -585,8 +584,8 @@
 }
 
 .outcome-card {
-  background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
-  border: 3px solid #0ea5e9;
+  background: linear-gradient(135deg, var(--logo-light), var(--economy));
+  border: 3px solid var(--main-color);
   border-radius: 25px;
   padding: 3rem;
   max-width: 100%;
@@ -603,7 +602,7 @@
   left: -50%;
   width: 200%;
   height: 200%;
-  background: linear-gradient(45deg, transparent, rgba(14, 165, 233, 0.1), transparent);
+  background: linear-gradient(45deg, transparent, rgba(100, 147, 230, 0.1), transparent);
   animation: shimmer 3s infinite;
 }
 
@@ -614,14 +613,14 @@
 }
 
 .outcome-card h3 {
-  color: #0c4a6e;
+  color: #000000;
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
 .outcome-card p {
-  color: #075985;
+  color: #6b7280;
   line-height: 1.6;
   margin-bottom: 2rem;
 }
@@ -640,12 +639,12 @@
   display: block;
   font-size: 2rem;
   font-weight: 800;
-  color: #0ea5e9;
+  color: var(--main-color);
   margin-bottom: 0.5rem;
 }
 
 .stat-desc {
-  color: #075985;
+  color: #6b7280;
   font-weight: 600;
   font-size: 0.9rem;
 }

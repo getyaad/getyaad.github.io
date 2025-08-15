@@ -13,7 +13,7 @@
   padding: 2.5rem;
   border-radius: 16px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-  border-left: 4px solid #6493E6;
+  border-left: 4px solid var(--main-color);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
 }
@@ -27,7 +27,7 @@
   position: absolute;
   top: -15px;
   left: 2.5rem;
-  background: linear-gradient(135deg, #6493E6, #F9A6A2);
+  background: linear-gradient(135deg, var(--main-color), var(--second-main-color));
   color: white;
   width: 40px;
   height: 40px;
@@ -43,7 +43,7 @@
 .diff-title {
   font-size: 1.3rem;
   font-weight: 700;
-  color: #1f2937;
+  color: #000000;
   margin: 1rem 0 1rem 0;
   line-height: 1.4;
 }
@@ -76,14 +76,14 @@
 .founding-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
-  border-color: #6493E6;
+  border-color: var(--main-color);
 }
 
 .founding-icon {
   width: 80px;
   height: 80px;
   margin: 0 auto 1.5rem;
-  background: linear-gradient(135deg, #6493E6, #F9A6A2);
+  background: linear-gradient(135deg, var(--main-color), var(--second-main-color));
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -95,7 +95,7 @@
 .founding-card h3 {
   font-size: 1.4rem;
   font-weight: 700;
-  color: #1f2937;
+  color: #000000;
   margin: 0 0 1rem 0;
 }
 
@@ -132,7 +132,7 @@
 .works-card.premium {
   border: 2px solid transparent;
   background: linear-gradient(white, white) padding-box,
-              linear-gradient(135deg, #6493E6, #F9A6A2) border-box;
+              linear-gradient(135deg, var(--main-color), var(--second-main-color)) border-box;
 }
 
 .works-card:hover {
@@ -171,7 +171,7 @@
 
 .works-action {
   display: inline-block;
-  color: #6493E6;
+  color: var(--main-color);
   text-decoration: none;
   font-weight: 600;
   font-size: 0.9rem;
@@ -180,14 +180,14 @@
 }
 
 .works-action:hover {
-  color: #4A90E2;
+  color: var(--second-main-color);
   text-decoration: underline;
 }
 
 .works-card h3 {
   font-size: 1.4rem;
   font-weight: 700;
-  color: #1f2937;
+  color: #000000;
   margin-bottom: 1rem;
 }
 
@@ -200,7 +200,7 @@
 
 .works-badge {
   display: inline-block;
-  background: linear-gradient(135deg, #6493E6, #F9A6A2);
+  background: linear-gradient(135deg, var(--main-color), var(--second-main-color));
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 20px;
@@ -212,7 +212,7 @@
 
 /* Research Credibility */
 .research-credibility {
-  background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+  background: linear-gradient(135deg, var(--logo-light), var(--economy));
   padding: 3rem 2rem;
   border-radius: 20px;
   margin-top: 3rem;
@@ -221,7 +221,7 @@
 }
 
 .research-credibility h4 {
-  color: #1f2937;
+  color: #000000;
   font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 2rem;
@@ -253,7 +253,7 @@
 
 .logo-placeholder {
   font-size: 2.5rem;
-  color: #6493E6;
+  color: var(--main-color);
 }
 
 .institution-logo {
@@ -278,7 +278,7 @@
 }
 
 .research-links-compact a {
-  color: #3b82f6;
+  color: var(--main-color);
   text-decoration: none;
   font-weight: 500;
   font-size: 0.9rem;
@@ -286,7 +286,7 @@
 }
 
 .research-links-compact a:hover {
-  color: #2563eb;
+  color: var(--second-main-color);
   text-decoration: underline;
 }
 
@@ -296,7 +296,7 @@
 }
 
 .works-cta-button {
-  background: linear-gradient(135deg, #6493E6, #4A90E2);
+  background: linear-gradient(135deg, var(--main-color), var(--second-main-color));
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -314,7 +314,7 @@
 .works-cta-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(100, 147, 230, 0.4);
-  background: linear-gradient(135deg, #4A90E2, #6493E6);
+  background: linear-gradient(135deg, var(--second-main-color), var(--main-color));
 }
 
 .research-points-grid {
@@ -343,7 +343,7 @@
 }
 
 .research-point-compact h5 {
-  color: #1f2937;
+  color: #000000;
   font-size: 1.1rem;
   font-weight: 600;
   margin: 0 0 0.5rem 0;
@@ -357,12 +357,12 @@
 }
 
 .research-credibility p a {
-  color: #3b82f6;
+  color: var(--main-color);
   text-decoration: none;
   font-weight: 500;
 }
 
 .research-credibility p a:hover {
-  color: #2563eb;
+  color: var(--second-main-color);
   text-decoration: underline;
 }
