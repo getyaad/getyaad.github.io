@@ -17,7 +17,7 @@ export const UTM_SOURCE_MESSAGES = {
   'google': 'Waitlist me - Google',
   'bing': 'Waitlist me - Bing',
   'duckduckgo': 'Waitlist me - Duckduckgo',
-  'default': 'Waitlist me'
+  'default': 'Waitlist me - Website'
 }
 
 // Brand Colors
