@@ -54,7 +54,7 @@ export const SOCIAL_LINKS = {
 export const APP_CONFIG = {
   name: 'Yaad',
   tagline: 'Revise less. Remember more.',
-  earlyAccessDate: '20 Aug 2025',
+  earlyAccessDate: '27 Aug 2025',
   description: 'Master UPSC PYQs with spaced repetition. Think you know them? Test yourself.',
   features: [
     '30+ Years of PYQs',

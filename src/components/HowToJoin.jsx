@@ -3,35 +3,54 @@ import { WHATSAPP_NUMBER } from '../config/constants'
 
 const HowToJoin = () => {
   const displayNumber = WHATSAPP_NUMBER.replace(/^91/, '')
+  
+  const handleWhatsAppClick = () => {
+    window.open(`https://wa.me/${WHATSAPP_NUMBER}`, '_blank')
+  }
 
   return (
     <section className="section">
       <h2 className="section-title">How to join</h2>
       <p style={{textAlign: 'center', color: '#6b7280', fontSize: '1rem', maxWidth: '500px', margin: '0 auto 3rem'}}>
-        Get early access in three simple steps
+        Get early access in three simple steps (10 seconds)
       </p>
       
-      <div className="simple-steps-container">
-        <div className="simple-step">
-          <div className="step-number">1</div>
-          <h3>Tap WhatsApp button</h3>
-          <p>Opens automatically with our number</p>
+      <div className="join-steps-timeline">
+        <div className="timeline-step">
+          <div className="step-number-circle">
+            <span className="step-num">01</span>
+          </div>
+          <div className="step-content-area">
+            <h3>Start Here</h3>
+            <button className="step-whatsapp-button" onClick={handleWhatsAppClick}>
+              💬 Join on WhatsApp
+            </button>
+            <p className="step-subtitle">WhatsApp opens automatically</p>
+          </div>
+          <div className="step-connector"></div>
         </div>
         
-        <div className="step-arrow">→</div>
-        
-        <div className="simple-step">
-          <div className="step-number">2</div>
-          <h3>Save our contact</h3>
-          <p>+91 {displayNumber} as "Yaad UPSC"</p>
+        <div className="timeline-step">
+          <div className="step-number-circle">
+            <span className="step-num">02</span>
+          </div>
+          <div className="step-content-area">
+            <h3>Save our contact</h3>
+            <p className="phone-number-bold">+91 {displayNumber}</p>
+            <p className="step-subtitle">📱 Save as "Yaad UPSC"</p>
+          </div>
+          <div className="step-connector"></div>
         </div>
-
-        <div className="step-arrow">→</div>
         
-        <div className="simple-step">
-          <div className="step-number">3</div>
-          <h3>Send "Saved"</h3>
-          <p>You're on the waitlist!</p>
+        <div className="timeline-step">
+          <div className="step-number-circle">
+            <span className="step-num">03</span>
+          </div>
+          <div className="step-content-area">
+            <h3>Send "Saved"</h3>
+            <p className="step-main-content">✅ You're on the waitlist!</p>
+            <p className="step-subtitle">We will notify you on Aug 27th!</p>
+          </div>
         </div>
       </div>
 

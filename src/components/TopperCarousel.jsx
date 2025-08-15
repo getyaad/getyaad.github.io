@@ -11,87 +11,82 @@ const TopperCarousel = () => {
       name: "Shakti Dubey",
       rank: "AIR 1, CSE 2024",
       quote: "Active recall and spaced repetition are game-changers for retention",
-      image: "/shakti.png",
+      image: "/shakti.JPG",
       badge: "AIR 1",
       link: "https://www.youtube.com/shorts/EEhCjHwaYuE",
-      linkText: "Watch Interview",
-      linkIcon: "🎥"
+      linkText: "See Source"
     },
     {
       name: "Dr. Mayur Hazarika",
       rank: "AIR 5, CSE 2022",
       quote: "Systematic revision with spaced intervals made all the difference",
-      image: "/mayur.png",
+      image: "/mayur.JPG",
       badge: "AIR 5",
       link: "https://www.youtube.com/watch?v=DABE4Gs0DHo",
-      linkText: "Watch Interview",
-      linkIcon: "🎥"
+      linkText: "See Source"
     },
     {
       name: "Dr. Shivin Chaudhary",
       rank: "AIR 297, CSE 2022",
       quote: "Testing yourself beats passive reading every single time",
-      image: "/shivin.png",
+      image: "/shivin.PNG",
       badge: "AIR 297",
       link: "https://www.youtube.com/watch?v=iGqwcHo_LFA&pp=ygUYc2hpdmluIHNwYWNlIHJwZWV0aXRpb24g0gcJCa0JAYcqIYzv",
-      linkText: "Watch Interview",
-      linkIcon: "🎥"
+      linkText: "See Source"
     },
     {
       name: "Sonnet Jose",
       rank: "AIR 54, CSE 2024",
       quote: "I sometimes studied topics again using spaced repetition for better recall",
-      image: "/sonnet.png",
+      image: "/sonnet.jpeg",
       badge: "AIR 54",
       link: "https://muditjainblog.com/2025/04/30/sonnet-jose-air-54-cse-24-journey-strategy/#:~:text=5.%20I%20sometimes,studied%20them%20again.",
-      linkText: "Read Strategy",
-      linkIcon: "📝"
+      linkText: "See Source"
     },
     {
       name: "Nikhil Mahajan",
       rank: "AIR 80, CSE 2021",
       quote: "Regular revision at intervals is crucial for long-term retention",
-      image: "/nikhil.png",
+      image: "/nikhil.JPG",
       badge: "AIR 80",
       link: "https://www.youtube.com/watch?v=LCszwuWZEHE&t=1936",
-      linkText: "Watch Interview (32:16)",
-      linkIcon: "🎥"
+      linkText: "See Source"
     },
     {
       name: "Manuj Jindal",
       rank: "AIR 53, CSE 2016",
       quote: "Active learning through testing was key to my preparation strategy",
-      image: "/manuj.png",
+      image: "/manuj.JPG",
       badge: "AIR 53",
       link: "https://www.youtube.com/watch?v=dUO-NZwyIWk",
-      linkText: "Watch Interview",
-      linkIcon: "🎥"
+      linkText: "See Source"
     }
   ]
 
   return (
     <div className="section-wrapper-dark">
       <section className="section" id="toppers">
-        <h2 className="section-title">Learn from the Best</h2>
+        <h2 className="section-title">Study like a topper</h2>
         <p style={{textAlign: 'center', color: '#6b7280', fontSize: '1.1rem', maxWidth: '600px', margin: '0 auto 3rem'}}>
-          Top rankers use <strong>spaced repetition and active recall</strong>. Yaad makes these methods effortless.
+          <strong>Spaced repetition and active recall.</strong><br/> Toppers recommend these methods; Yaad simply makes them easy to use.
         </p>
         
-        <div className="topper-carousel-container">
+        <div className="topper-carousel-wrapper">
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={30}
             slidesPerView={1}
+            centeredSlides={true}
             navigation={{
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
+              nextEl: '.carousel-next',
+              prevEl: '.carousel-prev',
             }}
             pagination={{
               clickable: true,
-              el: '.swiper-pagination',
+              el: '.carousel-pagination',
             }}
             autoplay={{
-              delay: 4000,
+              delay: 6000,
               disableOnInteraction: false,
             }}
             loop={true}
@@ -99,42 +94,44 @@ const TopperCarousel = () => {
           >
             {slides.map((slide, index) => (
               <SwiperSlide key={index}>
-                <div className="topper-card-enhanced">
-                  <div className="card-background"></div>
-                  <div className="topper-photo">
-                    <img src={slide.image} alt={slide.name} />
-                    <div className={`rank-badge ${slide.badge.includes('AIR 1') ? 'air1' : 
-                      slide.badge.includes('AIR 5') ? 'air5' : 
-                      slide.badge.includes('AIR 54') ? 'air54' : 
-                      slide.badge.includes('AIR 53') ? 'air53' : 
-                      slide.badge.includes('AIR 80') ? 'air80' : 'top300'}`}>
-                      {slide.badge}
+                <div className="topper-card-horizontal">
+                  <div className="topper-left">
+                    <div className="topper-image-container">
+                      <img src={slide.image} alt={slide.name} className="topper-image" />
+                      <div className="rank-badge-new">
+                        {slide.badge}
+                      </div>
                     </div>
                   </div>
-                  <div className="topper-content">
-                    <h3>{slide.name}</h3>
-                    <p className="topper-rank-year">{slide.rank}</p>
-                    <div className="topper-quote">
-                      <span className="quote-icon">"</span>
-                      <p>{slide.quote}</p>
+                  
+                  <div className="topper-right">
+                    <div className="topper-details">
+                      <h3 className="topper-name">{slide.name}</h3>
+                      <p className="topper-rank">{slide.rank}</p>
                     </div>
-                    <a href={slide.link} target="_blank" rel="noopener" className="source-link">
-                      <span className="link-icon">{slide.linkIcon}</span>
-                      {slide.linkText}
-                    </a>
+                    
+                    <div className="topper-quote-section">
+                      <p className="quote-text">"{slide.quote}"</p>
+                    </div>
+                    
+                    <div className="topper-link">
+                      <a href={slide.link} target="_blank" rel="noopener" className="source-link">
+                        {slide.linkText}
+                      </a>
+                    </div>
                   </div>
                 </div>
               </SwiperSlide>
             ))}
+            
+
           </Swiper>
           
-          <div className="swiper-button-prev"></div>
-          <div className="swiper-button-next"></div>
-          <div className="swiper-pagination"></div>
+          <div className="carousel-pagination"></div>
         </div>
 
         <p style={{textAlign: 'center', color: '#9ca3af', fontSize: '0.8rem', marginTop: '2rem'}}>
-          <em>Quotes reference their public advice on study methods, not endorsements of Yaad.</em>
+          <em>References are to their public advice on study methods, not endorsements of Yaad.</em>
         </p>
       </section>
     </div>
