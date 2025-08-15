@@ -11,7 +11,7 @@ const TopperCarousel = () => {
     {
       name: "Shakti Dubey",
       rank: "AIR 1, CSE 2024",
-      quote: "Active recall and spaced repetition are game-changers for retention",
+      quote: "I used active recall to revise Laxmikanth. I wrote my notes as questions instead of copying all the answers. When revising, I tried to answer each question from memory, rather than just reading my notes.",
       image: "/shakti.JPG",
       badge: "AIR 1",
       link: "https://www.youtube.com/shorts/EEhCjHwaYuE",
@@ -20,7 +20,7 @@ const TopperCarousel = () => {
     {
       name: "Dr. Mayur Hazarika",
       rank: "AIR 5, CSE 2022",
-      quote: "Systematic revision with spaced intervals made all the difference",
+      quote: "Spaced repetition is a method of reviewing or revising the material at systematic intervals.",
       image: "/mayur.JPG",
       badge: "AIR 5",
       link: "https://www.youtube.com/watch?v=DABE4Gs0DHo",
@@ -29,7 +29,7 @@ const TopperCarousel = () => {
     {
       name: "Dr. Shivin Chaudhary",
       rank: "AIR 297, CSE 2022",
-      quote: "Testing yourself beats passive reading every single time",
+      quote: "The best way to revise for the UPSC Civil Services Exam is through active recall.",
       image: "/shivin.PNG",
       badge: "AIR 297",
       link: "https://www.youtube.com/watch?v=iGqwcHo_LFA&pp=ygUYc2hpdmluIHNwYWNlIHJwZWV0aXRpb24g0gcJCa0JAYcqIYzv",
@@ -38,7 +38,7 @@ const TopperCarousel = () => {
     {
       name: "Sonnet Jose",
       rank: "AIR 54, CSE 2024",
-      quote: "I sometimes studied topics again using spaced repetition for better recall",
+      quote: "I used the active recall method suggested by Shivin Sir, especially for topics like constitutional bodies.",
       image: "/sonnet.jpeg",
       badge: "AIR 54",
       link: "https://muditjainblog.com/2025/04/30/sonnet-jose-air-54-cse-24-journey-strategy/#:~:text=5.%20I%20sometimes,studied%20them%20again.",
@@ -47,7 +47,7 @@ const TopperCarousel = () => {
     {
       name: "Nikhil Mahajan",
       rank: "AIR 80, CSE 2021",
-      quote: "Regular revision at intervals is crucial for long-term retention",
+      quote: "Spaced repetition works with the memory curve. If you revise at the right intervals, it boosts retention. This means you don't have to revise as often to remember things. It optimises your revision process, and efficiency is crucial when there's a lot of syllabus and little time.",
       image: "/nikhil.JPG",
       badge: "AIR 80",
       link: "https://www.youtube.com/watch?v=LCszwuWZEHE&t=1936",
@@ -56,10 +56,10 @@ const TopperCarousel = () => {
     {
       name: "Manuj Jindal",
       rank: "AIR 53, CSE 2016",
-      quote: "Active learning through testing was key to my preparation strategy",
+      quote: "One of the best ways to remember anything for UPSC in the long term is the recall technique. After you read something, try to recall the important information. Recall, recall, recall.",
       image: "/manuj.JPG",
       badge: "AIR 53",
-      link: "https://www.youtube.com/watch?v=dUO-NZwyIWk",
+      link: "https://youtube.com/shorts/v40UQtbtO30?si=vTTy5toPzyRw9e-i",
       linkText: "See Source"
     }
   ]

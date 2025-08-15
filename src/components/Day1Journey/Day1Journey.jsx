@@ -53,23 +53,11 @@ const Day1Journey = () => {
           <div className="day1-visual">
             <div className="visual-container">
               <div className="phone-mockup">
-                <div className="phone-screen">
-                  <div className="app-header">
-                    <div className="app-logo">📚</div>
-                    <span>Yaad</span>
-                  </div>
-                  <div className="question-card">
-                    <div className="question-text">Which article deals with fundamental rights?</div>
-                    <div className="answer-options">
-                      <div className="option">A. Article 12-35</div>
-                      <div className="option correct">B. Article 14-32</div>
-                      <div className="option">C. Article 36-51</div>
-                    </div>
-                  </div>
-                  <div className="progress-bar">
-                    <div className="progress-fill"></div>
-                  </div>
-                </div>
+                <img 
+                  src="/phone-mcq.png" 
+                  alt="Yaad app showing MCQ question: Which article deals with fundamental rights? with Article 14-32 highlighted as correct answer"
+                  className="phone-app-image"
+                />
               </div>
               
               <div className="learning-flow">

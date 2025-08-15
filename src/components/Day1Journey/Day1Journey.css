@@ -416,28 +416,21 @@
 }
 
 .phone-mockup {
-  width: 280px;
-  height: 500px;
-  background: linear-gradient(135deg, var(--main-color), var(--second-main-color));
-  border-radius: 30px;
-  padding: 8px;
+  max-width: 280px;
   margin: 0 auto 2rem;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-  position: relative;
+  border-radius: 30px;
   overflow: hidden;
 }
 
-.phone-mockup::before {
-  content: '';
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60px;
-  height: 6px;
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 3px;
+.phone-app-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 30px;
 }
+
+
 
 .phone-screen {
   width: 100%;
