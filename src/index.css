@@ -8,8 +8,8 @@
   --second-main-color: #95BEFA;
   --light-blue: rgba(149, 190, 250, 0.1);
   --very-light-blue: rgba(149, 190, 250, 0.05);
-  --gray-gradient: linear-gradient(135deg, #ffffff 0%, #F5F5F5 50%, rgba(215, 223, 234, 0.5) 100%);
-  --blue-gradient: linear-gradient(135deg, #ffffff 0%, rgba(149, 190, 250, 0.08) 50%, rgba(149, 190, 250, 0.15) 100%);
+  --gray-gradient: rgba(149, 190, 250, 0.15);/*linear-gradient(135deg, #ffffff 0%, #F5F5F5 50%, rgba(215, 223, 234, 0.5) 100%);*/
+  --blue-gradient: rgba(149, 190, 250, 0.15);/*linear-gradient(135deg, #ffffff 0%, rgba(149, 190, 250, 0.08) 50%, rgba(149, 190, 250, 0.15) 100%);*/
   --whatsapp-green: #25D366;
   --approval-green: #B5E352;
 

@@ -108,7 +108,7 @@
 }
 
 .journey-announcement .announcement-text {
-  color: var(--approval-green);
+  color: var(--main-color);
   font-weight: 600;
   font-size: 1rem;
   margin-bottom: 0.5rem;
