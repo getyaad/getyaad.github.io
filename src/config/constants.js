@@ -68,7 +68,7 @@ export const getWhatsAppUrl = (utmSource = null) => {
   const baseUrl = WHATSAPP_BASE_URL
   
   if (!utmSource) {
-    return `${baseUrl}?text=${encodeURIComponent(UTM_SOURCE_MESSAGES.default)}`
+    return `${baseUrl}?text=${UTM_SOURCE_MESSAGES.default}`
   }
   
   // Clean the UTM source (remove .com and capitalize)
@@ -78,7 +78,7 @@ export const getWhatsAppUrl = (utmSource = null) => {
   
   const message = UTM_SOURCE_MESSAGES[cleanSource] || UTM_SOURCE_MESSAGES.default
   
-  return `${baseUrl}?text=${encodeURIComponent(message)}`
+  return `${baseUrl}?text=${message}`
 }
 
 // Utility function to extract UTM source from URL

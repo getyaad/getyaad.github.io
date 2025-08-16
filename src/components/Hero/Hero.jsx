@@ -35,12 +35,6 @@ const Hero = () => {
 
   return (
     <section className="hero">
-      {/* 1. Thin Top Banner */}
-      <div className="hero-top-banner">
-        <img src="/india-emoji.png" alt="India Flag" className="banner-flag" />
-        <span className="banner-text">Freedom from Forgetting starts this Independence Day. <a href={whatsappUrl} className="banner-link" target="_blank" rel="noopener">Join the waitlist now.</a></span>
-      </div>
-
       <div className="hero-content">
         {/* 2. Horizontal Logo + Tagline */}
         <div className="hero-header-horizontal">
@@ -53,15 +47,15 @@ const Hero = () => {
 
         {/* 4-6. Organic Journey Layout */}
         <div className="journey-container">
-          {/* Independence Day Card */}
-          <div className="journey-card independence-card">
-            <h3 className="card-title">Independence Day</h3>
-            <p className="card-subtitle">Join the waitlist today</p>
+          {/* Waitlist Card */}
+          <div className="journey-card waitlist-card">
+            <h3 className="card-title">Join the Waitlist</h3>
+            <p className="card-subtitle">Get early access today</p>
             <p className="card-description">
               Sign up for free to get early access to Yaad. We help you remember UPSC questions 
               better using smart study methods.
             </p>
-            <span className="status-badge current">Today</span>
+            <span className="status-badge current">Now Open</span>
           </div>
 
           {/* Curved Journey Path with Countdown */}
@@ -94,9 +88,8 @@ const Hero = () => {
                 />
               </svg>
 
-              {/* Journey Icons positioned at curve endpoints */}
+              {/* Journey Icons positioned at curve center */}
               <div className="journey-icons-container">
-                <img src="/india-independence-2.png" alt="Independence" className="journey-icon independence-icon" />
                 <img src="/ganesh-2.png" alt="Ganesh" className="journey-icon ganesh-journey-icon" />
               </div>
             </div>

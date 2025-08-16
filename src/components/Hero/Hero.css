@@ -9,39 +9,7 @@
   flex-direction: column;
 }
 
-/* Ultra-thin Top Banner */
-.hero-top-banner {
-  width: 100%;
-  background: linear-gradient(135deg, var(--main-color), var(--second-main-color));
-  color: #ffffff;
-  padding: 0.4rem 0;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  box-shadow: 0 1px 3px rgba(100, 147, 230, 0.3);
-}
-
-.banner-flag {
-  width: 16px;
-  height: 16px;
-}
-
-.banner-text {
-  font-size: 0.8rem;
-  font-weight: 500;
-}
-
-.banner-link {
-  color: #ffffff;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.banner-link:hover {
-  color: #6b7280;
-}
+/* Hero Content Container */
 
 /* Hero Content Container */
 .hero-content {
@@ -221,7 +189,7 @@
     order: 2; /* Put journey path in the middle when stacked */
   }
   
-  .independence-card {
+  .waitlist-card {
     order: 1; /* First card */
   }
   
@@ -247,7 +215,7 @@
     inset 0 1px 0 rgba(255, 255, 255, 0.9);
 }
 
-.independence-card {
+.waitlist-card {
   border-left: none;
   border-top: 3px solid var(--main-color);
 }
@@ -261,7 +229,7 @@
 
 .card-title {
   font-size: 1.4rem;
-  font-weight: 800;
+  font-weight: 700;
   color: #000000;
   margin: 0 0 0.8rem 0;
   text-align: center;
@@ -269,7 +237,7 @@
   line-height: 1.2;
 }
 
-.independence-card .card-title, 
+.waitlist-card .card-title, 
 .ganesh-card .card-title {
   margin-top: 0rem;
 }
@@ -304,18 +272,8 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.status-badge.current {
-  background: linear-gradient(135deg, var(--main-color), var(--second-main-color));
-  color: #ffffff;
-  box-shadow: 0 4px 12px rgba(100, 147, 230, 0.3);
-}
-
-.status-badge.upcoming {
-  background: linear-gradient(135deg, var(--second-main-color), var(--main-color));
-  color: #ffffff;
-  box-shadow: 0 4px 12px rgba(149, 190, 250, 0.3);
+  background-color: #e5e7eb;
+  color: #374151;
 }
 
 /* Curved Journey Path */
@@ -361,31 +319,17 @@
   transition: transform 0.3s ease;
 }
 
-.independence-icon:hover {
+.ganesh-journey-icon:hover {
   transform: translate(-50%, -50%) scale(1.1) rotate(0deg);
 }
 
-.ganesh-journey-icon:hover {
-  transform: translate(50%, -50%) scale(1.1) rotate(0deg);
-}
-
-/* Independence icon - positioned at curve start */
-.independence-icon {
-  width: 140px;
-  height: auto;
-  top: 30%;
-  left: 17%;
-  transform: translate(-50%, -50%) rotate(-8deg);
-  z-index: 3;
-}
-
-/* Ganesh journey icon - positioned at curve end */
+/* Ganesh journey icon - positioned at curve center */
 .ganesh-journey-icon {
   width: 160px;
   height: auto;
   top: 50%;
-  right: 15%;
-  transform: translate(50%, -50%) rotate(6deg);
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(6deg);
   z-index: 3;
 }
 
