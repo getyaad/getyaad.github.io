@@ -50,7 +50,7 @@ const Hero = () => {
           {/* Waitlist Card */}
           <div className="journey-card waitlist-card">
             <h3 className="card-title">Join the Waitlist</h3>
-            <p className="card-subtitle">Get early access today</p>
+            <p className="card-subtitle">Get early access today<br/>&nbsp;</p>
             <p className="card-description">
               Sign up for free to get early access to Yaad. We help you remember UPSC questions 
               better using smart study methods.
@@ -60,14 +60,6 @@ const Hero = () => {
 
           {/* Curved Journey Path with Countdown */}
           <div className="journey-path">
-            {/* Announcement Info */}
-            <div className="journey-announcement">
-              <div className="announcement-text">
-                Early access opens on Ganesh Chaturthi
-              </div>
-              <p className="info-subtitle">Join now to get in first • Free PYQs • Opt out anytime • No Spam</p>
-            </div>
-
             {/* SVG Curve and Icons Container */}
             <div className="curve-with-icons">
               {/* SVG Curved Path */}
@@ -89,14 +81,14 @@ const Hero = () => {
               </svg>
 
               {/* Journey Icons positioned at curve center */}
-              <div className="journey-icons-container">
+              <div className="journey-icons-container" style={{display: 'none'}}>
                 <img src="/ganesh-2.png" alt="Ganesh" className="journey-icon ganesh-journey-icon" />
               </div>
             </div>
 
             {/* Compact Countdown */}
             <div className="countdown-widget">
-              <div className="countdown-label">App launches in</div>
+              <div className="countdown-label">App launches:</div>
               {!timeLeft.expired ? (
                 <div className="countdown-display">
                   {isLoading ? (
@@ -131,13 +123,13 @@ const Hero = () => {
 
           {/* Ganesh Chaturthi Card */}
           <div className="journey-card ganesh-card">
-            <h3 className="card-title">Ganesh Chaturthi</h3>
-            <p className="card-subtitle">App launches completely free</p>
+            <h3 className="card-title">Early Access</h3>
+            <p className="card-subtitle">Everything is free during early access</p>
             <p className="card-description">
-              Get full access to Yaad with 30 years of UPSC questions (1995-2024). 
-              Everything is free during early access.<br/>&nbsp;
+            30 years of UPSC questions<br/>(1995-2024)<br/>• Opt-out anytime<br/>• No Spam
+            <br/>&nbsp;
             </p>
-            <span className="status-badge upcoming">Aug 27, 2025</span>
+            <span className="status-badge upcoming">Free PYQs</span>
           </div>
         </div>
 
