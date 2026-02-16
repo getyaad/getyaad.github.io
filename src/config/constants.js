@@ -46,8 +46,7 @@ export const SOCIAL_LINKS = {
   instagram: 'https://www.instagram.com/getyaad/',
   youtube: 'https://www.youtube.com/@getyaad',
   linkedin: 'https://www.linkedin.com/company/getyaad/',
-  twitter: 'https://x.com/getyaad',
-  privacy: 'https://drive.google.com/file/d/1aHP9P63Vtn3QY1Yz1olTVwflasWAZWB0/view'
+  twitter: 'https://x.com/getyaad'
 }
 
 // App Configuration
@@ -66,18 +65,18 @@ export const APP_CONFIG = {
 // Utility function to get WhatsApp URL with UTM source
 export const getWhatsAppUrl = (utmSource = null) => {
   const baseUrl = WHATSAPP_BASE_URL
-  
+
   if (!utmSource) {
     return `${baseUrl}?text=${UTM_SOURCE_MESSAGES.default}`
   }
-  
+
   // Clean the UTM source (remove .com and capitalize)
   const cleanSource = utmSource
     .replace(/\.com$/i, '')
     .toLowerCase()
-  
+
   const message = UTM_SOURCE_MESSAGES[cleanSource] || UTM_SOURCE_MESSAGES.default
-  
+
   return `${baseUrl}?text=${message}`
 }
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Routes, Route } from 'react-router-dom'
 import './App.css'
 
 // Import all components
@@ -11,20 +12,31 @@ import FAQ from './components/FAQ/FAQ'
 import Team from './components/Team/Team'
 import CTA from './components/CTA/CTA'
 import Footer from './components/Footer/Footer'
+import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy'
+import TermsAndConditions from './components/TermsAndConditions/TermsAndConditions'
+
+// Home page component
+const HomePage = () => (
+  <>
+    <Hero />
+    <HowToJoin />
+    <WhyYaadWorks />
+    <Day1Journey />
+    <TopperCarousel />
+    <FAQ />
+    <Team />
+    <CTA />
+    <Footer />
+  </>
+)
 
 function App() {
   return (
-    <>
-      <Hero />
-      <HowToJoin />
-      <WhyYaadWorks/>
-      <Day1Journey />
-      <TopperCarousel />
-      <FAQ />
-      <Team />
-      <CTA />
-      <Footer />
-    </>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/privacy-policy" element={<><PrivacyPolicy /><Footer /></>} />
+      <Route path="/terms-and-conditions" element={<><TermsAndConditions /><Footer /></>} />
+    </Routes>
   )
 }
 
